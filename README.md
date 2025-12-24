@@ -1,73 +1,88 @@
-Hi, Im Ron or ebysslabs, even Ebby from my art friends online
-I’m currently developing FARMSLiteApp — a lightweight, local-first wellness tracker that helps users 
-reflect on their food, mood, and sleep patterns without digital noise, cloud dependency, or data harvesting.
+Ronald Reed (Ebysslabs)
 
-🧠 What I'm exploring:
-Python (hands-on learning through real, usable tools)
-Flow theory (phi — (Read.Me) won't render the symbol, but you feel it) based modeling
-Lifestyle pattern recognition and feedback integration — non-invasive, non-commercial
-Conscious system design rooted in repair, not control
+Independent developer and researcher focused on local-first, privacy-preserving systems that prioritize reflection, stability, and long-term behavior over engagement or optimization.
 
-🤝 I'm open to:
-Creative or speculative collaborations
-Ethical science grounded in emotional intelligence
-Explorers working at the intersection of biology, alignment, and tech
+This GitHub hosts experimental tools and research projects exploring system drift, recovery, and human-aligned design.
 
-🔐 Ethics-first approach:
-No tracking
-No scraping
-No user profiling
-Built with local-first principles
-Designed for awareness, not optimization
-Respects emotional autonomy over behavioral manipulation
+Current Work
+FARMSLiteApp
+
+A lightweight, offline-first lifestyle app for reflecting on food, mood, sleep, and activity patterns.
+
+No cloud services
+
+No analytics or tracking
+
+No accounts or data harvesting
+
+Data remains fully local to the user
+
+Designed to support awareness and pattern recognition without behavioral manipulation.
+
+🔗 https://www.farmsliteapp.com
+
+CAS 2.0 (Context-Aware Systems)
+
+A research framework for studying system drift, recovery behavior, and long-horizon stability under entropy and noise.
+
+Fully synthetic, reproducible experiments
+
+No training, tuning, or live intervention
+
+Long-run analysis (up to 200k+ steps)
+
+Focused on interpretability and bounded stability
+
+Used to explore how systems degrade, recover, and remain durable over time rather than optimizing short-term performance.
+
+Design Principles
+
+Local-first — no external dependencies
+
+Privacy-preserving — no tracking or profiling
+
+Repair-oriented — recovery over control
+
+Interpretable — systems should explain themselves
+
+Human-aligned — respect emotional and cognitive autonomy
 
 I build tools that listen, not systems that extract.
-Both FARMSLiteApp and HAGx are designed to support — never override.
 
-📫 Reach me at @ebysslabs on most platforms
-🌐 Creative portfolio: ebysslabsphotos.com
-🌐 App preview: www.farmsliteapp.com
+Collaboration
 
-© 2025 Ronald Reed (Ebysslabs). All rights reserved.
-This project is protected under copyright law.
-Not for commercial use. Contact for collaboration.
+Open to:
 
-CC BY-NC-ND 4.0
+Ethical research collaborations
 
-# License
+Speculative or exploratory system design
 
-## Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+Work at the intersection of biology, alignment, and technology
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+If your work values restraint, clarity, and care — feel free to reach out.
 
-You are free to:
-- **Share** — copy and redistribute the material in any medium or format  
-  **Under the following terms:**
-  - **Attribution** — You must give appropriate credit.
-  - **NonCommercial** — You may not use the material for commercial purposes.
-  - **NoDerivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+Contact
 
----
+X / GitHub / most platforms: @ebysslabs
 
-### Additional Restrictions (Author's Clause):
+Creative work: https://ebysslabsphotos.com
 
-🚫 This work may not be used in military, defense, law enforcement, or surveillance applications — regardless of organization, method, or intent.
+License
 
----
+© 2025 Ronald Reed (Ebysslabs)
 
-### Summary (Plain English):
+Licensed under CC BY-NC-ND 4.0 with additional restrictions.
 
-- ✅ You can read, share, and reference this work.  
-- ✅ You can collaborate ethically, with permission and credit.  
-- ❌ You may not sell, license, modify, or incorporate this into commercial, defense, or surveillance systems.  
-- ❌ You may not alter the system or redistribute modified versions.
+Not permitted:
 
----
+Commercial use
 
-### Full License:
+Derivative works
 
-For more information, see the full license:  
-[https://creativecommons.org/licenses/by-nc-nd/4.0/](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+Military, defense, law enforcement, or surveillance applications
+
+Full license:
+https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 <!---
 ebysslabscodes/ebysslabscodes is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
