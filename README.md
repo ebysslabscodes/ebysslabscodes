@@ -1,39 +1,110 @@
 Ronald Reed (Ebysslabs)
 
-Independent developer and researcher focused on local-first, privacy-preserving systems that prioritize reflection, stability, and long-term behavior over engagement or optimization.
+Independent researcher and developer focused on long-horizon behavior of systems, with an emphasis on drift, stability, recovery, and restraint under sustained exposure.
 
-This GitHub hosts experimental tools and research projects exploring system drift, recovery, and human-aligned design.
+My work prioritizes methodological rigor, interpretability, and auditability over optimization, engagement, or scale.
 
-Current Work
-FARMSLiteApp
+CAS 2.0 — Long-Horizon Evaluation Framework
 
-A lightweight, offline-first lifestyle app for reflecting on food, mood, sleep, and activity patterns.
+CAS 2.0 is a research framework for studying the long-horizon behavior of adaptive systems under frozen parameters and sustained stochastic exposure.
+
+It is explicitly not:
+
+a training system
+
+an optimization framework
+
+a performance benchmark
+
+a tuning or control loop
+
+Scope
+
+CAS 2.0 is designed to evaluate:
+
+gradual drift
+
+variance accumulation
+
+recovery persistence
+
+bounded stability under prolonged noise
+
+The framework treats time itself as a primary stressor, rather than assuming meaningful risk appears early.
+
+Experimental Characteristics
+
+Frozen configuration per experiment
+
+No mid-run intervention, tuning, or resets
+
+Continuous stochastic noise injection
+
+Long-horizon evaluation (up to 200k+ steps)
+
+Manual, line-by-line execution and logging
+
+Results compared across increasing horizons under identical conditions
+
+Observed behavior is used to inform what to test next, not to tune or modify the system under test.
+
+Code Availability
+
+The CAS 2.0 implementation is not publicly released.
+
+This is a deliberate choice.
+
+Public artifacts document:
+
+experimental design
+
+evaluation constraints
+
+phase structure
+
+reproducibility logic
+
+observed behaviors
+
+Implementation access may be explored through academic review or research collaboration.
+This is not a hard stop on access, but a commitment to responsible and ethical disclosure.
+
+Intended Use
+
+CAS 2.0 is intended for:
+
+academic research
+
+AI safety and evaluation work
+
+long-horizon reliability analysis
+
+It is not intended for:
+
+military or defense applications
+
+surveillance or law-enforcement systems
+
+adversarial or coercive use
+
+Other Work
+FARMSLite
+
+A lightweight, offline-first lifestyle journaling application focused on reflection and pattern awareness, not behavior change or engagement.
 
 No cloud services
 
 No analytics or tracking
 
-No accounts or data harvesting
+No accounts
 
-Data remains fully local to the user
+All data remains local to the user
 
-Designed to support awareness and pattern recognition without behavioral manipulation.
+FARMSLite is designed to support awareness without manipulation.
 
 🔗 https://www.farmsliteapp.com
 
-CAS 2.0 (Context-Aware Systems)
-
-A research framework for studying system drift, recovery behavior, and long-horizon stability under entropy and noise.
-
-Fully synthetic, reproducible experiments
-
-No training, tuning, or live intervention
-
-Long-run analysis (up to 200k+ steps)
-
-Focused on interpretability and bounded stability
-
-Used to explore how systems degrade, recover, and remain durable over time rather than optimizing short-term performance.
+google playstore: https://play.google.com/store/apps/details?id=com.ebysslabs.farmslite&pcampaignid=web_share
 
 Design Principles
 
@@ -41,31 +112,28 @@ Local-first — no external dependencies
 
 Privacy-preserving — no tracking or profiling
 
-Repair-oriented — recovery over control
+Interpretability-focused — systems should be inspectable
 
-Interpretable — systems should explain themselves
+Recovery-oriented — persistence over control
 
-Human-aligned — respect emotional and cognitive autonomy
-
-I build tools that listen, not systems that extract.
+Human-aligned — respect cognitive and emotional autonomy
 
 Collaboration
 
 Open to:
 
-Ethical research collaborations
+ethical research collaboration
 
-Speculative or exploratory system design
+academic review
 
-Work at the intersection of biology, alignment, and technology
+exploratory work on long-horizon system behavior
 
-If your work values restraint, clarity, and care — feel free to reach out.
+Particularly interested in work that values restraint, clarity, and methodological discipline.
 
 Contact
 
-X / GitHub / most platforms: @ebysslabs
-
-Creative work: https://ebysslabsphotos.com
+X / GitHub: @ebysslabs
+Research: https://osf.io/jvrfu/overview
 
 License
 
@@ -75,11 +143,11 @@ Licensed under CC BY-NC-ND 4.0 with additional restrictions.
 
 Not permitted:
 
-Commercial use
+commercial use
 
-Derivative works
+derivative works
 
-Military, defense, law enforcement, or surveillance applications
+military, defense, law-enforcement, or surveillance applications
 
 Full license:
 https://creativecommons.org/licenses/by-nc-nd/4.0/
