@@ -1,6 +1,6 @@
 Ronald Reed (Ebysslabs)
 
-Independent researcher and developer focused on long-horizon behavior of systems, with an emphasis on drift, stability, recovery, and restraint under sustained exposure.
+Independent researcher and developer focused on long-horizon system behavior, with emphasis on drift, stability, recovery, and restraint under sustained exposure.
 
 My work prioritizes methodological rigor, interpretability, and auditability over optimization, engagement, or scale.
 
@@ -87,10 +87,9 @@ surveillance or law-enforcement systems
 
 adversarial or coercive use
 
-Other Work
-FARMSLite
+Other Work — FARMSLite
 
-A lightweight, offline-first lifestyle journaling application focused on reflection and pattern awareness, not behavior change or engagement.
+FARMSLite is a lightweight, offline-first lifestyle journaling application focused on reflection and pattern awareness, not behavior change or engagement.
 
 No cloud services
 
@@ -102,9 +101,9 @@ All data remains local to the user
 
 FARMSLite is designed to support awareness without manipulation.
 
-🔗 https://www.farmsliteapp.com
+Website: https://www.farmsliteapp.com
 
-google playstore: https://play.google.com/store/apps/details?id=com.ebysslabs.farmslite&pcampaignid=web_share
+Google Play: https://play.google.com/store/apps/details?id=com.ebysslabs.farmslite
 
 Design Principles
 
@@ -133,7 +132,8 @@ Particularly interested in work that values restraint, clarity, and methodologic
 Contact
 
 X / GitHub: @ebysslabs
-Research: https://osf.io/jvrfu/overview
+
+Research artifacts & phase documentation: https://osf.io/jvrfu/overview
 
 License
 
