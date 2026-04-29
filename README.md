@@ -1,184 +1,100 @@
-# Ronald Reed (Ebysslabs)
+# RISWIS
 
-Independent researcher and developer focused on long-horizon system behavior, visible governance, and privacy-first system design.
+Control what your AI is allowed to use — before it generates anything.
 
-My work prioritizes methodological rigor, interpretability, auditability, and restraint over optimization, engagement, or scale.
+**Governance Layer for AI Systems**
 
----
+A control layer that sits between retrieval and generation — deciding what data the model is allowed to use before anything is generated.
 
-# CAS 2.0 — Long-Horizon Evaluation Framework
-
-CAS 2.0 is a research framework for studying the long-horizon behavior of adaptive systems under frozen parameters and sustained stochastic exposure.
-
-It is explicitly not:
-
-* a training system
-* an optimization framework
-* a performance benchmark
-* a tuning or control loop
+Live system with real ranking and decision logic.
 
 ---
 
-## Scope
+### The Problem
 
-CAS 2.0 is designed to evaluate:
+Most AI systems follow this pattern:
 
-* gradual drift
-* variance accumulation
-* recovery persistence
-* bounded stability under prolonged noise
+**Retrieve → Send to model → Generate**
 
-The framework treats time itself as a primary stressor rather than assuming meaningful risk appears early.
+There is no control over what actually reaches the model.
 
----
+Low-quality, outdated, or untrusted sources are treated the same as authoritative ones.
 
-## Experimental Characteristics
-
-* frozen configuration per experiment
-* no mid-run intervention, tuning, or resets
-* continuous stochastic noise injection
-* long-horizon evaluation (up to 200k+ steps)
-* manual, line-by-line execution and logging
-* results compared across increasing horizons under identical conditions
-
-Observed behavior is used to determine what to test next, not to modify the system under test.
+The result:
+- unreliable outputs
+- no visibility into why something was used
+- no enforceable trust boundary
 
 ---
 
-## Code Availability
+### The RISWIS Approach
 
-The CAS 2.0 implementation is not publicly released.
+RISWIS changes the order:
 
-This is a deliberate choice.
+**Retrieve → Govern → Generate**
 
-Public artifacts document:
-
-* experimental design
-* evaluation constraints
-* phase structure
-* reproducibility logic
-* observed behaviors
-
-Implementation access may be explored through academic review or research collaboration.
-
-This is not a hard stop on access, but a commitment to responsible and ethical disclosure.
+It enforces explicit policy decisions on retrieved data before it reaches the LLM.
 
 ---
 
-## Intended Use
+### What RISWIS Does
 
-CAS 2.0 is intended for:
-
-* academic research
-* AI safety and evaluation work
-* long-horizon reliability analysis
-
-It is not intended for:
-
-* military or defense applications
-* surveillance or law-enforcement systems
-* adversarial or coercive use
+- Re-ranks results using defined trust tiers (T1 / T2 / T3)
+- Separates **semantic ranking from policy decisions**
+- Surfaces **semantic winner vs policy winner**
+- Detects rank flips and overrides
+- Makes enforceable decisions: **ALLOW / REVIEW / BLOCK**
+- Returns auditable outputs with scores, multipliers, and flags
+- Prevents untrusted data from reaching the model
 
 ---
 
-# RISWIS — Retrieval Integrity & Structured Weighted Information System
+### Core Principle
 
-RISWIS is a governance-first retrieval prototype that separates semantic similarity from explicit ranking policy through tier weighting, auditability, and corpus integrity enforcement.
+Similarity finds answers.  
+**Governance decides what gets used.**
 
-It explores a practical systems question:
-
-> What happens when semantic relevance and trust policy disagree, and can that disagreement remain observable?
-
-RISWIS treats ranking governance as an explicit system layer rather than an implicit scoring side effect.
+semantic winner ≠ policy winner
 
 ---
 
-## Current Implementation
+### Who It's For
 
-* local semantic retrieval
-* deterministic tier-weighted ranking
-* raw rank vs weighted rank visibility
-* rank delta tracking
-* corpus integrity verification
-* structured audit logging
+- AI startups building production RAG systems
+- Teams shipping customer-facing or internal AI tools
+- Companies in regulated environments (healthcare, finance, legal)
+- Anyone responsible for what their AI outputs
 
 ---
 
-## Validation Progress
+### Live Demo
 
-RISWIS currently includes:
+→ https://riswis.com
 
-* Phase 1 — governance isolation
-* Phase 2 — semantic retrieval + integrity enforcement
-* Phase 3 — controlled governance behavior validation
-* Phase 4 — external semantic stress validation
-
-Validation focuses on whether trust weighting remains visible under semantic competition rather than hidden inside blended ranking behavior.
+Interactive demo of the decision layer.
 
 ---
 
-## Repository
+### Current Status
 
-https://github.com/ebysslabscodes/riswis
-
----
-
-# Design Principles
-
-* local-first where possible
-* explicit system boundaries
-* inspectable behavior
-* reproducible validation
-* recovery over control
-* human-readable logic before complexity
+- Working prototype with live ranking + decision logic
+- API endpoints: `/rank` and `/decide`
+- Actively moving toward production deployment
 
 ---
 
-# Research Direction
+### Other Work
 
-Open to:
-
-* ethical research collaboration
-* academic review
-* exploratory work on long-horizon system behavior
-* retrieval governance and visible ranking systems
-
-Particularly interested in work that values restraint, clarity, and methodological discipline.
+**CAS 2.0** — Long-horizon evaluation framework for system drift and stability.
 
 ---
 
-# Research Artifacts
+### Contact
 
-OSF:
-
-https://osf.io/jvrfu/overview
-
----
-
-# Contact
-
-X / GitHub: @ebysslabs
+X: https://x.com/ebysslabs  
+GitHub: https://github.com/ebysslabscodes  
+Email: ronreed@ebysslabs.com
 
 ---
 
-# License
-
-© 2025 Ronald Reed (Ebysslabs)
-
-Licensed under CC BY-NC-ND 4.0 with additional restrictions.
-
-Not permitted:
-
-* commercial use
-* derivative works
-* military, defense, law-enforcement, or surveillance applications
-
-Full license:
-
-https://creativecommons.org/licenses/by-nc-nd/4.0/
-
-
-<!---
-ebysslabscodes/ebysslabscodes is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Built by **Ronald Reed (Ebysslabs)**
